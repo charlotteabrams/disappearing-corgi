@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>jQueryFunction</title>
+    <link rel="stylesheet" type="text/css" href="disappearingNinja.css">
+    <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+        	$('img').click(function(){
+        		$(this).fadeOut('medium');
+        	});
+        	$('button').click(function(){
+    			$('img').fadeIn('medium');
+        	});
+        });
+    </script>
+</head>
+<body>
+	<h2> jQuery - Assignment 1 </h2>
+	<div>
+		<img src="corgi.jpeg">
+		<img src="corgi.jpeg">
+		<img src="corgi.jpeg">
+		<img src="corgi.jpeg">
+	</div>
+	<div>
+		<img src="corgi.jpeg">
+		<img src="corgi.jpeg">
+		<img src="corgi.jpeg">
+		<img src="corgi.jpeg">
+	</div>
+	<button>RESTORE THE CORGIS</button>
+
+</body>
+</html>
+<!--             $('.button4').click(function(){
+                $('.corgi2').fadeOut('slow');
+            });   --> 
